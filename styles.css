@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+/* The similerities between flex and grid property is that they both are applied on the parent container */
+
+#main {
+    border: 1px solid black;
+    /* padding: 50px; */
+    width: 50%;
+    height: 500px;
+    margin: 50px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+}
+
+#blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+    position: relative;
+    top: 50px;
+    left: -50px;
+    display: inline-block;
+    z-index: 2;
+}
+
+#green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+
+    position: relative;
+    top: 100px;
+    left: -100px;
+    display: inline-block;
+    z-index: 1;
+}
